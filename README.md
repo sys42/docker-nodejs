@@ -4,7 +4,7 @@
 
 NodeJS (iojs) installed locally in a Docker Container.
 
-Since many NodeJS require native compilation this image is based on [sys42/docker-build-essentials](https://github.com/sys42/docker-build-essentials).
+Since many NodeJS extensions require native compilation this image is based on [sys42/docker-build-essentials](https://github.com/sys42/docker-build-essentials).
 
 Additionally it contains:
 
