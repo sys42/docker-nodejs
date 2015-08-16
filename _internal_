@@ -2,13 +2,13 @@
 
 ## DON'T RUN THIS!
 ##
-## since this must execute in a subshell as user app it is too complicated 
-## to embed it directly in the Docker file    
+## since this must execute in a subshell as user app it is too complicated
+## to embed it directly in the Docker file
 git clone https://github.com/creationix/nvm.git ~/.nvm
-cd ~/.nvm                                              
-git checkout `git describe --abbrev=0 --tags`          
-echo '. ~/.nvm/nvm.sh' >> ~/.bashrc                    
+cd ~/.nvm
+git checkout `git describe --abbrev=0 --tags`
+echo '. ~/.nvm/nvm.sh' >> ~/.bashrc
 ## strange: sourcing .bashrc won't work!?
-. ~/.nvm/nvm.sh                                        
-nvm install iojs-v3.0.0                                
-nvm use iojs-v3.0.0
+. ~/.nvm/nvm.sh
+nvm install iojs-v3.0.0
+nvm alias default iojs-v3.0.0
